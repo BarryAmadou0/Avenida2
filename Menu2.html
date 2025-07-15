@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria Avenida - Menukaart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="avenida-header">
+  <div class="container">
+    <h1 class="display-4">Pizzeria Avenida</h1>
+    <p class="lead">Smaken uit de Mediterrane keuken</p>
+  </div>
+</header>
+
+<div class="container my-4">
+  <div class="card mb-3 opening-hours">
+    <div class="card-body">
+      <h3 class="card-title">Openingsuren</h3>
+      <p class="card-text">Maandag tot en met zondag: 16:00 - 00:00</p>
+    </div>
+  </div>
+
+  <div class="text-center contact-info mb-4">
+    <p class="fw-bold">04 94 75 20 04</p>
+  </div>
+
+  <div class="accordion" id="menuAccordion">
+
+    <!-- Voorgerechten -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingStarters">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStarters">
+          Voorgerechten
+        </button>
+      </h2>
+      <div id="collapseStarters" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Scampi's en lookboter</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kaaskroketten</span>
+              <span class="item-price">7,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Garnaalkroketten</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Scampi's in currysaus</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Calamaris</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Chicken Wings</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Salades -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSalads">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSalads">
+          Salades
+        </button>
+      </h2>
+      <div id="collapseSalads" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Nicoise</span>
+              <span class="item-price">11,00 €</span>
+            </div>
+            <div class="item-description">Gemengde sla, tonijn, ansjovis, olijven</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Mediterraanse salade</span>
+              <span class="item-price">14,00 €</span>
+            </div>
+            <div class="item-description">Tonijn, zeevruchten, scampi, ansjovis</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Salade Hawaii</span>
+              <span class="item-price">12,00 €</span>
+            </div>
+            <div class="item-description">Kip, ananas, cocktailsaus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soep -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSoup">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoup">
+          Soep
+        </button>
+      </h2>
+      <div id="collapseSoup" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Vissoep</span>
+              <span class="item-price">6,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Harira</span>
+              <span class="item-price">6,50 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pizza's -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPizzas">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePizzas">
+          Pizza's
+        </button>
+      </h2>
+      <div id="collapsePizzas" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Margherita</span>
+              <span class="item-price">8,00 €</span>
+            </div>
+            <div class="item-description">Kaas, tomaten</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Quattro Formaggi</span>
+              <span class="item-price">13,00 €</span>
+            </div>
+            <div class="item-description">4 soorten kaas</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Bolognese</span>
+              <span class="item-price">13,00 €</span>
+            </div>
+            <div class="item-description">Tomatensaus, gehakte vlees</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Funghi</span>
+              <span class="item-price">10,00 €</span>
+            </div>
+            <div class="item-description">Champignons</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Primavera</span>
+              <span class="item-price">12,00 €</span>
+            </div>
+            <div class="item-description">Champignons, paprika, spinazie, mais, olijven, ui</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Solo nito</span>
+              <span class="item-price">11,00 €</span>
+            </div>
+            <div class="item-description">Ei, spinazie, look</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Salami</span>
+              <span class="item-price">10,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Capricciosa</span>
+              <span class="item-price">11,00 €</span>
+            </div>
+            <div class="item-description">Salami, champignons</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Quattro Stagioni</span>
+              <span class="item-price">13,00 €</span>
+            </div>
+            <div class="item-description">Salami, champignons, paprika, ansjovis</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Hawaii</span>
+              <span class="item-price">13,00 €</span>
+            </div>
+            <div class="item-description">Kip, ananas</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Avenida</span>
+              <span class="item-price">15,00 €</span>
+            </div>
+            <div class="item-description">Pita, kip, champignons, paprika, ui en olijven, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Tonna</span>
+              <span class="item-price">12,00 €</span>
+            </div>
+            <div class="item-description">Ui, tonijn, look</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Frutti Del Mar</span>
+              <span class="item-price">13,00 €</span>
+            </div>
+            <div class="item-description">Zeevruchten, look</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Scampi</span>
+              <span class="item-price">14,00 €</span>
+            </div>
+            <div class="item-description">Scampi's, ui, look</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Salamone</span>
+              <span class="item-price">14,00 €</span>
+            </div>
+            <div class="item-description">Zalm, ui</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Napolitana</span>
+              <span class="item-price">10,00 €</span>
+            </div>
+            <div class="item-description">Ansjovis, kappertjes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasta's -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPastas">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePastas">
+          Pasta's
+        </button>
+      </h2>
+      <div id="collapsePastas" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="subcategory">
+            <div class="subcategory-title">Spaghetti - Tagliatelle - Penne - Linguine</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Bolognese</span>
+                <span class="item-price">13,00 €</span>
+              </div>
+              <div class="item-description">Tomatensaus, gehakt</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Quattro Formaggi</span>
+                <span class="item-price">15,00 €</span>
+              </div>
+              <div class="item-description">Roomsaus, 4 soorten kaas</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Arabiata</span>
+                <span class="item-price">12,00 €</span>
+              </div>
+              <div class="item-description">Pikante tomatensaus, ui</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pollo</span>
+                <span class="item-price">13,00 €</span>
+              </div>
+              <div class="item-description">Kip, champignons, currysaus</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Scampi</span>
+                <span class="item-price">15,00 €</span>
+              </div>
+              <div class="item-description">Scampi, tomatenroomsaus</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Coriano</span>
+                <span class="item-price">15,50 €</span>
+              </div>
+              <div class="item-description">Scampi, currysaus, broccoli</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Diabolique</span>
+                <span class="item-price">15,00 €</span>
+              </div>
+              <div class="item-description">Scampi, pikante roomsaus</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Avenida</span>
+                <span class="item-price">15,50 €</span>
+              </div>
+              <div class="item-description">Scampi, Avenidasaus</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Zalm</span>
+                <span class="item-price">15,00 €</span>
+              </div>
+              <div class="item-description">Roomsaus, ui</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Zeevruchten</span>
+                <span class="item-price">15,00 €</span>
+              </div>
+              <div class="item-description">Tomatenroomsaus</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pasta special</span>
+                <span class="item-price">17,00 €</span>
+              </div>
+              <div class="item-description">Scampi's, kip, zeevruchten, groenten, pikant</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Driekleuren</span>
+                <span class="item-price">17,00 €</span>
+              </div>
+              <div class="item-description">Lasagne bolognese, Penne met kip en Linguine scampi special, pikant</div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Lasagne</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Bolognese</span>
+                <span class="item-price">15,50 €</span>
+              </div>
+              <div class="item-description">Ui, paprika, gehakt</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Cannelloni</span>
+                <span class="item-price">14,50 €</span>
+              </div>
+              <div class="item-description">Spinazie, ricotta, bolognese</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pita's -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPitas">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePitas">
+          Pita's
+        </button>
+      </h2>
+      <div id="collapsePitas" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="item-description mb-3">Zelfgebakken pitabroodjes met frieten</div>
+
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Avenida</span>
+              <span class="item-price">9,00 €</span>
+            </div>
+            <div class="item-description">Kip, ui, kroketten, pikant (ZONDER FRIETEN)</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip Hawaii</span>
+              <span class="item-price">9,00 €</span>
+            </div>
+            <div class="item-description">Ananas, maïs</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip special</span>
+              <span class="item-price">9,00 €</span>
+            </div>
+            <div class="item-description">Paprika, maïs, ui, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Lams Hawaii</span>
+              <span class="item-price">9,50 €</span>
+            </div>
+            <div class="item-description">Ananas, maïs</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Lam special</span>
+              <span class="item-price">9,50 €</span>
+            </div>
+            <div class="item-description">Paprika, ui, maïs, pikant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nieuwe gerechten -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNew">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNew">
+          Nieuwe gerechten
+        </button>
+      </h2>
+      <div id="collapseNew" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Stoofvlees met frieten</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Voi en vent kip champignon</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Hamburger Kefta</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Ui, kaas en saus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Panini</span>
+              <span class="item-price">8,50 €</span>
+            </div>
+            <div class="item-description">Kip en kaas met portie friet en salade</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Panini</span>
+              <span class="item-price">7,00 €</span>
+            </div>
+            <div class="item-description">Mozzarella en tomaat met portie friet en salade</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Panini</span>
+              <span class="item-price">8,50 €</span>
+            </div>
+            <div class="item-description">Kefta en kaas met portie friet en salade</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warme schotels -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMainCourses">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMainCourses">
+          Warme schotels
+        </button>
+      </h2>
+      <div id="collapseMainCourses" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="item-description mb-3">De schotels worden geserveerd met een salade en rijst of frietjes of puree of aardappelkroketjes of aardappelschijfjes</div>
+
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip special</span>
+              <span class="item-price">15,50 €</span>
+            </div>
+            <div class="item-description">Ui, paprika, maïs, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip Hawaii</span>
+              <span class="item-price">15,50 €</span>
+            </div>
+            <div class="item-description">Ananas, maïs</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip</span>
+              <span class="item-price">15,50 €</span>
+            </div>
+            <div class="item-description">Champignonsaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip</span>
+              <span class="item-price">15,50 €</span>
+            </div>
+            <div class="item-description">Currysaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip</span>
+              <span class="item-price">15,50 €</span>
+            </div>
+            <div class="item-description">Pepersaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>4* sterren</span>
+              <span class="item-price">17,50 €</span>
+            </div>
+            <div class="item-description">Kipfilet, rijst, spaghetti, currysaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Avenidasaus, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Kip Natuur</span>
+              <span class="item-price">17,50 €</span>
+            </div>
+            <div class="item-description">Groentjes, spaghetti alio olio</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Lams special</span>
+              <span class="item-price">16,00 €</span>
+            </div>
+            <div class="item-description">Ui, paprika maïs, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Lams Hawaii</span>
+              <span class="item-price">16,00 €</span>
+            </div>
+            <div class="item-description">Ananas, maïs</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Lams feta</span>
+              <span class="item-price">16,00 €</span>
+            </div>
+            <div class="item-description">Fetakaas</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Steak</span>
+              <span class="item-price">18,50 €</span>
+            </div>
+            <div class="item-description">Champignonsaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Steak</span>
+              <span class="item-price">18,50 €</span>
+            </div>
+            <div class="item-description">Pepersaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Steak</span>
+              <span class="item-price">18,50 €</span>
+            </div>
+            <div class="item-description">Avenidasaus, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Steak Natuur</span>
+              <span class="item-price">18,00 €</span>
+            </div>
+            <div class="item-description">Groentjes, spaghetti alio olio</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Spieringkotelet</span>
+              <span class="item-price">25,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Vis natuur</span>
+              <span class="item-price">18,00 €</span>
+            </div>
+            <div class="item-description">Groenten, spaghetti alio olio</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Vis in tomatensaus</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Rijst, spaghetti</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Vis</span>
+              <span class="item-price">17,50 €</span>
+            </div>
+            <div class="item-description">Avenidasaus, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Rijst met zeevruchten</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Scampi's, tomatensaus</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Dagschotel</span>
+              <span class="item-price">17,00 €</span>
+            </div>
+            <div class="item-description">Scampi's, kip, zeevruchten, pikant</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Zalm</span>
+              <span class="item-price">19,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Avenidaschotel</span>
+              <span class="item-price">20,00 €</span>
+            </div>
+            <div class="item-description">Kip, lam, merguez, Hackfleisch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kinderschotels -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingKids">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKids">
+          Kinderschotels
+        </button>
+      </h2>
+      <div id="collapseKids" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Hamburger</span>
+              <span class="item-price">8,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Fishburger</span>
+              <span class="item-price">8,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Spaghetti bolognese</span>
+              <span class="item-price">8,50 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra's -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingExtras">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtras">
+          Extra's
+        </button>
+      </h2>
+      <div id="collapseExtras" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra kaas</span>
+              <span class="item-price">2,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra groenten</span>
+              <span class="item-price">4,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra vlees</span>
+              <span class="item-price">7,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra kip</span>
+              <span class="item-price">6,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra saus</span>
+              <span class="item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra pitabroodje</span>
+              <span class="item-price">2,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra brood</span>
+              <span class="item-price">1,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra portie friet</span>
+              <span class="item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra portie puree</span>
+              <span class="item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra portie rijst</span>
+              <span class="item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-name">
+              <span>Extra portie pasta</span>
+              <span class="item-price">3,50 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingDesserts">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesserts">
+          Desserts
+        </button>
+      </h2>
+      <div id="collapseDesserts" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="subcategory">
+            <div class="subcategory-title">Taarten</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Dubai Chocolate</span>
+                <span class="item-price">9,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Raphael Coco</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Red Velvet</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Tiramisu Velvet</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Saint Sebastian cake</span>
+                <span class="item-price">9,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Bosbessen</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Biscuit Met Oreo</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>White Profiteroles</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Lotus Met Caramel</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Leonardo Cake</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Framboos Cheesecake</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Pannenkoeken</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pannenkoeken met suiker</span>
+                <span class="item-price">5,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pannenkoeken met Nutella</span>
+                <span class="item-price">6,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pannenkoeken met Nutella en amandelen</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pannenkoeken met banaan en honing</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pannenkoeken met chocolade en ijs</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Wafels</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Wafel met suiker en ijs</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Wafel met chocolade en ijs</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Klassieke desserts</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Tiramisu</span>
+                <span class="item-price">6,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Moelleux</span>
+                <span class="item-price">6,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Crème brûlée</span>
+                <span class="item-price">6,00 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">IJscreme</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Banana Split</span>
+                <span class="item-price">8,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Dame Blanche</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Aardbeien Coupe</span>
+                <span class="item-price">8,50 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dranken -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingDrinks">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDrinks">
+          Dranken
+        </button>
+      </h2>
+      <div id="collapseDrinks" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          <div class="subcategory">
+            <div class="subcategory-title">Warme dranken</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Koffie</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Koffie met melk</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Ijskoffie</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Cappuccino</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Chocomelk</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Marokkaanse muntthee</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Zwarte thee</span>
+                <span class="item-price">3,00 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Koude dranken</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Cola/Cola light</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Cola grote fles</span>
+                <span class="item-price">10,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Fanta</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Fanta grote fles</span>
+                <span class="item-price">10,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Sprite</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Ice Tea</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Loosa ice</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Gini</span>
+                <span class="item-price">2,80 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Tonic</span>
+                <span class="item-price">2,80 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Agrum</span>
+                <span class="item-price">2,80 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Appelsiensap</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Vers geperste appelsiensap</span>
+                <span class="item-price">4,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Water plat/bruis</span>
+                <span class="item-price">2,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Water grote fles</span>
+                <span class="item-price">8,00 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Mojitos</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Aardbei Mojito</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Classic Mojito</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Milano Mojito</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Alaska Mojito</span>
+                <span class="item-price">7,50 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Smoothies</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Mango Smoothie</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Aardbeien Smoothie</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Avenida Smoothie</span>
+                <span class="item-price">8,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Banaan Smoothie</span>
+                <span class="item-price">7,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Avocado Smoothie</span>
+                <span class="item-price">8,00 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subcategory">
+            <div class="subcategory-title">Milkshakes</div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Vanille Milkshake</span>
+                <span class="item-price">6,00 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Aardbeien Milkshake</span>
+                <span class="item-price">6,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Chocolade Milkshake</span>
+                <span class="item-price">6,50 €</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-name">
+                <span>Pistache Milkshake</span>
+                <span class="item-price">5,50 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center mt-4 py-3">
+    <p>Alle gerechten kunnen meegenomen worden</p>
+    <p class="text-muted">© 2023 Pizzeria Avenida</p>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria Avenida - Menukaart</title>
+  <style>
+    :root {
+      --primary: #e74c3c;
+      --secondary: #f39c12;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .menu-section {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section-header {
+      background-color: var(--dark);
+      color: white;
+      padding: 0.8rem 1rem;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .section-content {
+      padding: 1rem;
+      display: none;
+    }
+
+    .section-content.active {
+      display: block;
+    }
+
+    .menu-item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #eee;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .item-name {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .item-price {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .item-description {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.3rem;
+    }
+
+    .subcategory {
+      margin-top: 1.5rem;
+    }
+
+    .subcategory-title {
+      font-size: 1.1rem;
+      color: var(--dark);
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .opening-hours {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact-info {
+      text-align: center;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 750px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Pizzeria Avenida</h1>
+    <div class="subtitle">Smaken uit de Mediterrane keuken</div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="opening-hours">
+    <h3>Openingsuren</h3>
+    <p>Maandag tot en met zondag: 16:00 - 00:00</p>
+  </div>
+
+  <div class="contact-info">
+    <p>04 94 75 20 04</p>
+  </div>
+
+  <!-- Menu sections will be inserted here -->
+  <div class="menu-section">
+    <div class="section-header">Voorgerechten</div>
+    <div class="section-content">
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Scampi's en lookboter</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Kaaskroketten</span>
+          <span class="item-price">7,00 €</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Garnaalkroketten</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Scampi's in currysaus</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Calamaris</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Chicken Wings</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="section-header">Pizza's</div>
+    <div class="section-content">
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Margherita</span>
+          <span class="item-price">8,00 €</span>
+        </div>
+        <div class="item-description">Kaas, tomaten</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Quattro Formaggi</span>
+          <span class="item-price">13,00 €</span>
+        </div>
+        <div class="item-description">4 soorten kaas</div>
+      </div>
+      <!-- Add all other pizzas in the same format -->
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="section-header">Pasta's</div>
+    <div class="section-content">
+      <div class="subcategory">
+        <div class="subcategory-title">Spaghetti - Tagliatelle - Penne - Linguine</div>
+        <div class="menu-item">
+          <div class="item-name">
+            <span>Bolognese</span>
+            <span class="item-price">13,00 €</span>
+          </div>
+          <div class="item-description">Tomatensaus, gehakt</div>
+        </div>
+        <!-- Add all other pasta dishes -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Lasagne</div>
+        <div class="menu-item">
+          <div class="item-name">
+            <span>Bolognese</span>
+            <span class="item-price">15,50 €</span>
+          </div>
+          <div class="item-description">Ui, paprika, gehakt</div>
+        </div>
+        <!-- Add other lasagne options -->
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="section-header">Warme Schotels</div>
+    <div class="section-content">
+      <div class="menu-item">
+        <div class="item-name">
+          <span>Kip special</span>
+          <span class="item-price">15,50 €</span>
+        </div>
+        <div class="item-description">Ui, paprika, maïs, pikant</div>
+      </div>
+      <!-- Add all other warme schotels -->
+      <div class="item-description" style="margin-top: 1rem; font-style: italic;">
+        Alle schotels worden geserveerd met een salade en rijst of frietjes of puree of aardappelkroketjes of aardappelschijfjes
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="section-header">Desserts</div>
+    <div class="section-content">
+      <div class="subcategory">
+        <div class="subcategory-title">Taarten</div>
+        <div class="menu-item">
+          <div class="item-name">
+            <span>Dubai Chocolate</span>
+            <span class="item-price">9,00 €</span>
+          </div>
+        </div>
+        <!-- Add all other desserts -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Pannenkoeken</div>
+        <!-- Add pannenkoeken -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Wafels</div>
+        <!-- Add wafels -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">IJscreme</div>
+        <!-- Add ijscreme -->
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="section-header">Dranken</div>
+    <div class="section-content">
+      <div class="subcategory">
+        <div class="subcategory-title">Warme Dranken</div>
+        <div class="menu-item">
+          <div class="item-name">
+            <span>Koffie</span>
+            <span class="item-price">2,50 €</span>
+          </div>
+        </div>
+        <!-- Add all other warme dranken -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Koude Dranken</div>
+        <!-- Add koude dranken -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Mojitos</div>
+        <!-- Add mojitos -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Smoothies</div>
+        <!-- Add smoothies -->
+      </div>
+
+      <div class="subcategory">
+        <div class="subcategory-title">Milkshakes</div>
+        <!-- Add milkshakes -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <p>Alle gerechten kunnen meegenomen worden</p>
+    <p>© 2023 Pizzeria Avenida</p>
+  </footer>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionHeaders = document.querySelectorAll('.section-header');
+
+    sectionHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        content.classList.toggle('active');
+      });
+    });
+
+    // Open first section by default
+    if (sectionHeaders.length > 0) {
+      sectionHeaders[0].nextElementSibling.classList.add('active');
+    }
+  });
+</script>
+</body>
+</html>
